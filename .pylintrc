@@ -430,7 +430,26 @@ disable=raw-checker-failed,
         deprecated-pragma,
         use-implicit-booleaness-not-comparison-to-string,
         use-implicit-booleaness-not-comparison-to-zero,
-        use-symbolic-message-instead
+        use-symbolic-message-instead,
+        # Missing module docstring
+        C0114,
+        # Too few public methods
+        R0903,
+        # Missing class docstring
+        C0115,
+        # Missing function or method docstring
+        C0116,
+        # Too many arguments
+        R0913,
+        # Redefining built-in
+        W0622,
+        # Unused argument
+        W0613,
+        # Type variable name doesn't conform to predefined naming style
+        C0103,
+        # Unused import
+        W0611
+
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option
