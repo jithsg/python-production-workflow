@@ -9,7 +9,7 @@
     "files.exclude": {
         "**/__pycache__": true,
         "**/*.pyc": true,
-        "**/.git": true
+        "**/.git": false
     },
     "[python]": {
         "editor.formatOnSave": true

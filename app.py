@@ -76,7 +76,7 @@ student_dict = Dict[str, Union[int, str]]
 student_dict = {"name": "John", "age": 25}
 print(student_dict["name"])
 
-
+# student_dict["grade"] = "A"
 class Point(NamedTuple):
     x: int
     y: int
