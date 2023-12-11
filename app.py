@@ -2,14 +2,13 @@
 
 # noqa: F401
 from __future__ import annotations
-from typing import Dict, Union, TypedDict, NamedTuple, List
+
 import datetime
-import os
 from dataclasses import dataclass
+from typing import Dict, List, NamedTuple, TypedDict, Union
 
 # import numpy as np
 # import pandas as pd
-from pylint import lint
 
 """This is a module docstring"""
 
@@ -161,24 +160,23 @@ def consume_many_types(
 
 from typing import *
 
-
 any_value: Any = 1
 
 nums: List[int] = [1, 2, 3, 4, 5]
 print(nums)
 
-nums_2 :List[int]=[5, 4, 3, 2, 1]
+nums_2: List[int] = [5, 4, 3, 2, 1]
 print(nums_2)
 
-threed_vector: Tuple[int, int, int]= (1, 2, 3)
+threed_vector: Tuple[int, int, int] = (1, 2, 3)
 
 print(threed_vector)
 
 print(threed_vector[0])
 
-nd_vector : Tuple[int, ...] = (1, 2, 3, 4, 5)
+nd_vector: Tuple[int, ...] = (1, 2, 3, 4, 5)
 print(nd_vector)
-dict:Dict[str, int]= {"a": 1, "b": 2, "c": 3}
+dict: Dict[str, int] = {"a": 1, "b": 2, "c": 3}
 print(dict)
 
 itr: Iterable[int] = [1, 2, 3, 4, 5]
@@ -187,38 +185,44 @@ print(itr)
 misc: List[Union[int, float, str]] = [1, 2.0, "3", 1, "k"]
 print(misc)
 
-def greet(name:Optional[str]=None) -> str:
+
+def greet(name: Optional[str] = None) -> str:
     if name is None:
         return "Hello, world!!"
     else:
         return f"Hello, {name}"
-    
-    
+
+
 print(greet())
+
 
 class pupil(TypedDict):
     name: str
     age: int
     grade: str
-    
-pupil_1: pupil= {"name": "John", "age": 25, "grade": "A"}
+
+
+pupil_1: pupil = {"name": "John", "age": 25, "grade": "A"}
 print(pupil_1)
+
 
 class dot(NamedTuple):
     x: int
     y: int
     z: int
 
-point_1: dot= dot(1, 2, 3)
+
+point_1: dot = dot(1, 2, 3)
 print(point_1.x)
 
-pupil_2 =pupil(name="John", age=25, grade="A")
+pupil_2 = pupil(name="John", age=25, grade="A")
 print(pupil_2)
 
-pupil_3:pupil= pupil(name="John", age=25, grade="A")
+pupil_3: pupil = pupil(name="John", age=25, grade="A")
 print(pupil_3)
 
 from dataclasses import dataclass
+
 
 @dataclass
 class Student:
@@ -226,8 +230,9 @@ class Student:
     age: int
     grade: str
     mark: int
-    
-alice: Student= Student("Alice", 20, "A", 100)
+
+
+alice: Student = Student("Alice", 20, "A", 100)
 
 print(alice)
 
@@ -237,13 +242,14 @@ customer_1: cust = {"name": "John", "age": 25}
 print(customer_1)
 
 
-
 # TAddable = Union[int, float]
 
 TAddable = TypeVar("TAddable", int, float, str)
 
+
 def add(a: TAddable, b: TAddable) -> TAddable:
     return a + b
+
 
 print(add(1, 2))
 
