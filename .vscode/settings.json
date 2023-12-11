@@ -1,0 +1,17 @@
+{
+    "python.pythonPath": "/home/jithish/Documents/new-folder/venv/bin/python", // Replace with your Python interpreter path
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": ["--max-line-length=120"],
+    "editor.rulers": [120],
+    "editor.tabSize": 4,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/.git": true
+    },
+    "[python]": {
+        "editor.formatOnSave": true
+    }
+}
